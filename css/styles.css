@@ -18,6 +18,7 @@ h2{
 
 .portfolio-content{
   position: relative;
+  width: 100%;
 }
 
 /* ===============================Loader style============================ */
@@ -29,7 +30,7 @@ h2{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .loader .inner-loader{
@@ -100,44 +101,68 @@ h2{
 
 /* =============================Menu====================================== */
 
-#navigation{
+.menu-div{
   position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center;
-  padding-right: 2%;
-  z-index: 100;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
 }
 
-#navigation ul{
-  background-color: #353b48;
-  box-shadow: 1px 1px 8px 0 #591D1E;
-  margin: 10px 0;
-  border: 0.2px solid transparent;
+.menu-container{
   padding: 0;
-  border-radius: 4.2px;
+  margin: 0;
+
 }
 
-#navigation li{
-  padding: 20px 0;
+#navigation{
+  text-align: center;
 }
 
-#navigation li a{
-  color: #fff;
+.div-button{
+
+  text-align: right;
+   width: 100%;
+   background-color: #353b48;
+}
+
+.navbar-toggler-button{
+  background-color: #00cec9;
+  border-radius: 20%;
+  margin: 1%;
+
 }
 
 .navbar-toggler-icon{
   background-image: url("../images/icons/menu.png");
 }
 
-.nav-current-section {
-  background: #00DAD5;
-  border: 1px solid #00DAD5;
+#navigation .menu-list{
+  box-shadow: 1px 1px 8px 0 #353b48;
+  padding: 0 ;
+  background-color: #353b48;
 }
 
-.fixedNav #navigation{
-  position: fixed;
-  top: 0;
+@media (min-width: 992px) {
+  .menu-list-margin{
+  margin: 35px 20px 0 0;
+  border: 0.2px solid transparent;
+  border-radius: 4px;
+  }
+}
+
+#navigation li{
+  padding: 20px 10px;
+}
+
+#navigation li a{
+  color: #fff;
+  padding: 0;
+}
+
+.nav-current-section {
+  background: #00cec9;
+  border: 1px solid #00cec9;
 }
 
 /* ================================About Section=========================== */
@@ -153,6 +178,7 @@ h2{
 
 .about-img{
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .about-quote{
@@ -160,12 +186,12 @@ h2{
   display: block;
   float: left;
   width: 35%;
-  margin: 0;
+  margin: 0 10px 0 0;
 
 }
 
 .about-quote p{
-  padding: 0px 10px;
+  padding: 0 10px;
   font-size: 1.25rem;
   color: #ff4757;
   border-left: 2.5px solid;
@@ -175,7 +201,7 @@ h2{
 /* =======================Features Style====================== */
 
 .features-section {
-  padding: 20px 230px 0;
+  padding: 20px 16% 0;
 }
 
 .features-section p {
@@ -186,7 +212,7 @@ h2{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 35%;
+  width: 75px;
 }
 
 .feature-img {
@@ -268,27 +294,43 @@ h2{
 }
 
 .work-container{
-  position: relative;
-  margin: 0 17%;
+  /* position: relative; */
+  padding: 0 17%;
 }
 
 .work-container p{
   font-size: 1rem;
 }
 
+@media (min-width: 992px) {
 .work-left{
-  padding: 0 40px;
-  position: relative;
-  width: 50%;
+  padding: 0 40px 0 0;
+  /* position: relative; */
+  /* width: 50%; */
   left: 0;
   border-right: 1.5px solid #ff4757;
+  border-left: none;
+  text-align: right;
+}
+}
+
+@media (max-width: 991.9px) {
+.work-left-small{
+  padding: 0 0 0 40px;
+  /* position: relative; */
+  /* width: 50%; */
+  left: -1.5px;
+  /* bottom: -100%; */
+  border-left: 1.5px solid #ff4757;
+}
 }
 
 .work-right{
-  padding: 0 40px;
-  position: relative;
-  width: 50%;
-  left: calc(50% - 1.5px);
+  padding: 0 0 0 40px;
+  /* position: relative; */
+  /* width: 50%; */
+  left: -1.5px;
+  /* bottom: -100%; */
   border-left: 1.5px solid #ff4757;
 }
 .work-card{
@@ -300,10 +342,21 @@ h2{
   padding-top: 0;
 }
 
-.left-year{
+@media (min-width: 992px) {
+ .left-year{
   left: calc(100% - 1.7rem);
   top: 0;
   z-index: 100;
+}
+}
+
+@media (max-width: 991.9px) {
+.left-year-small{
+  left: -1.7rem;
+  top: 0;
+  z-index: 100;
+
+}
 }
 
 .year{
@@ -333,9 +386,18 @@ h2{
 	border-bottom: 12px solid transparent;
 }
 
+@media (min-width: 992px) {
 .left-arrow{
   border-right: 12px solid #00cec9;
   left: -12px;
+}
+}
+
+@media (max-width: 991.9px) {
+.left-arrow-small{
+  border-left: 12px solid #00cec9;
+  left: 100%;
+}
 }
 
 .right-arrow{
