@@ -63,39 +63,55 @@
     </nav>
   </div>
 
-  <div class="portfolio-content">
-    <div id="navigation" class="menu-container">
-      <ul class="nav flex-column">
-        <li class="nav-item nav-current-section about-menu-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item skills-menu-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item work-menu-item">
-          <a class="nav-link" href="#work">Work</a>
-        </li>
-        <li class="nav-item contact-menu-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+
+<div class="portfolio-content">
+<div class="menu-div">
+
+    <nav id="navigation" class="navbar navbar-expand-lg menu-container sticky-top">
+
+      <div class="div-button">
+        <button class="navbar-toggler navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav  flex-column menu-list menu-list-margin">
+          <li class="nav-item about-menu-item nav-current-section">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item skills-menu-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item work-menu-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item contact-menu-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
 
     <div id="about" class="section">
 
       <div class="about-container">
         <div class="about-img">
-          <img src="./images/aboutimg.png" alt="about-img">
+        <img src="./images/aboutimg.png" alt="about-img">
         </div>
 
         <div>
           <h2>ABOUT ME</h2>
         </div>
 
+        <blockquote class="about-quote">
+          <p>I strive to create beautiful websites and applications that maximize my clients' business.</p>
+        </blockquote>
+
         <div class="about-desc">
-          <blockquote class="about-quote">
-            <p>I strive to create beautiful websites and applications that maximize my clients' business.</p>
-          </blockquote>
           <p>
             Hi, my name is Edelmira and I'm a Telematics Engineer and full stack developer with a passion for creating and bringing new ideas to life. I'm a problem solver by nature and a fast learner.
           </p>
@@ -220,24 +236,34 @@
     <div id="work" class="work-section section">
       <h2 class="work-heading">WORK EXPERIENCE</h2>
       <div class="work-container">
-        <div class="work-0 work-left">
-          <div class="year left-year">
-            <div class="arrow left-arrow"></div>
+
+        <div class="row">
+
+        <div class="work-0 work-left  col-lg-6 work-left-small">
+          <div class="year left-year left-year-small">
+            <div class="arrow left-arrow left-arrow-small"></div>
             <p>2000</p>
           </div>
-          <div class="card  text-right work-card">
+          <div class="card work-card">
             <div class="card-body work-card-body">
               <h5 class="card-title">Programmer</h5>
+              <!-- <h6 class="card-subtitle mb-2">ACT, Inc.</h6> -->
               <p class="card-text">Development of applications for apparel industry and financial institutions, using Cold Fusion, SQL Server and C programming.</p>
             </div>
           </div>
         </div>
-        <div class="work-1 work-right">
+        <div class="col-lg-6">
+
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+        <div class="work-1 work-right   col-lg-6">
           <div class="year right-year">
             <p>2002</p>
             <div class="arrow right-arrow"></div>
           </div>
-          <div class="card  text-left work-card">
+          <div class="card  work-card">
             <div class="card-body work-card-body">
               <h5 class="card-title">Internet Senior Technician</h5>
               <p class="card-text">Automation of different processes of Internet Operation & Maintenance Department and development of web pages and applications using PHP, Perl, MySQL, Oracle and Cold Fusion.<br />Technical support, configuration
@@ -245,19 +271,29 @@
             </div>
           </div>
         </div>
-        <div class="work-2 work-left">
-          <div class="year left-year">
-            <div class="arrow left-arrow"></div>
+
+
+        <div class="work-2 work-left col-lg-6 work-left-small">
+          <div class="year left-year left-year-small">
+            <div class="arrow left-arrow left-arrow-small"></div>
             <p>2004</p>
           </div>
-          <div class="card  text-right work-card">
+          <div class="card  work-card">
             <div class="card-body work-card-body">
               <h5 class="card-title">Teacher</h5>
               <p class="card-text">Teaching the following levels: IP Routing for CCNA, Switching for CCNA, Network Fundamentals for CCNA, Installation and Support for LAN.</p>
             </div>
           </div>
         </div>
-        <div class="work-3 work-right">
+
+        <div class="col-lg-6">
+
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+
+        <div class="work-3 work-right col-lg-6">
           <div class="year right-year">
             <p>2007</p>
             <div class="arrow right-arrow"></div>
@@ -269,19 +305,29 @@
             </div>
           </div>
         </div>
-        <div class="work-4 work-left">
-          <div class="year left-year">
-            <div class="arrow left-arrow"></div>
+
+        <div class="work-4 work-left col-lg-6 work-left-small">
+          <div class="year left-year left-year-small">
+            <div class="arrow left-arrow left-arrow-small"></div>
             <p>2009</p>
           </div>
-          <div class="card  text-right work-card">
+          <div class="card  work-card">
             <div class="card-body work-card-body">
               <h5 class="card-title">Technical Subject Matter</h5>
               <p class="card-text">Provide in-depth, expert level sales support and advice to Sales and proposal team, covering services dimensioning and quotation preparation of proposals for Latin America and Caribbean customers.</p>
             </div>
           </div>
         </div>
-        <div class="work-5 work-right">
+
+        <div class="col-lg-6">
+
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+
+
+        <div class="work-5 work-right col-lg-6">
           <div class="year right-year">
             <p>2016</p>
             <div class="arrow right-arrow"></div>
@@ -294,18 +340,22 @@
             </div>
           </div>
         </div>
-        <div class="work-6 work-left">
-          <div class="year left-year">
-            <div class="arrow left-arrow"></div>
+        <div class="work-6 work-left col-lg-6 work-left-small">
+          <div class="year left-year left-year-small">
+            <div class="arrow left-arrow left-arrow-small"></div>
             <p>2020</p>
           </div>
-          <div class="card  text-right work-card">
+          <div class="card  work-card">
             <div class="card-body work-card-body">
               <h5 class="card-title">Full Stack Developer</h5>
               <p class="card-text">Freelancer developing websites, web and mobile applications using different languages and frameworks such as HTML, CSS, JavaScript, JQuery, Bootstrap, ReactJS, Android Studio and Wordpress.</p>
             </div>
           </div>
         </div>
+
+
+      </div>
+
       </div>
     </div>
 
