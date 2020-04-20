@@ -61,6 +61,10 @@ $(document).ready(function() {
     }
   });
 
+  if ($(window).width() < 960){
+    $(".work-card .collapse").collapse();
+  }
+
   // const workItems = $(".work-left").length + $(".work-right").length;
   //
   // let workClass = "";
