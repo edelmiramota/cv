@@ -21,6 +21,10 @@ h2{
   width: 100%;
 }
 
+.small-font {
+  font-size: 0.9rem;
+}
+
 /* ===============================Loader style============================ */
 
 .loader{
@@ -212,7 +216,7 @@ h2{
 }
 
 .features-section p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .card img {
@@ -301,12 +305,64 @@ h2{
 }
 
 .work-container{
-  /* position: relative; */
   padding: 0 17%;
 }
 
-.work-container p{
+.work-container {
   font-size: 1rem;
+}
+
+.work-desc-toggler {
+  border-top: 1px solid #00cec9;
+  position: relative;
+}
+
+.half-circle {
+  position: relative;
+  top: -1px;
+  height: 20px;
+  width: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #00cec9;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.half-circle a{
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.half-circle a:hover{
+  color: #fff;
+}
+
+
+.half-circle a.collapsed{
+  background-image: url(../images/icons/plus.png);
+}
+
+.half-circle a:not(.collapsed){
+background-image: url(../images/icons/minus.png);
+}
+
+.work-location a,
+.work-location a:hover,
+.work-location{
+  color: #00cec9;
+}
+
+.work-desc {
+  margin: 0;
+  padding: 0 0 15px;
 }
 
 @media (min-width: 992px) {
@@ -349,6 +405,12 @@ h2{
   padding-top: 0;
 }
 
+@media (max-width: 991.9px) {
+  .work-card-body{
+    padding-bottom: 30px;
+  }
+}
+
 @media (min-width: 992px) {
  .left-year{
   left: calc(100% - 1.7rem);
@@ -370,6 +432,7 @@ h2{
   position: absolute;
   background-color: #00cec9;
   height: 24px;
+  color: #fff;
 }
 
 .year p{
@@ -438,7 +501,6 @@ h2{
 .copyright-section{
   background-color: #353b48;
   color: #fff;
-  font-size: 0.9rem;
   padding: 100px 5px 50px;
 }
 
@@ -450,6 +512,5 @@ h2{
 
 .social-networks a{
   margin: 20px;
-  font-size: 1.4rem;
   color: #fff;
 }
